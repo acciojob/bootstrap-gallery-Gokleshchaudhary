@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Image Cards Gallery</title>
+    <title>Scrollable Image Cards</title>
     <style>
         .card {
             border-radius: 15px;
             margin: 10px;
+            overflow: hidden; /* Hide overflow */
+        }
+        .card-img-top {
+            height: 200px; /* Set fixed height */
+            object-fit: cover; /* Cover the area */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
         .text-center {
             text-align: center;
+        }
+        .scrollable {
+            max-height: 200px; /* Set max height for scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
     </style>
 </head>
@@ -23,7 +33,9 @@
         <!-- Card 1 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image 1">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image 1">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 1 Description</h6>
                     <p class="text-center">Details about Image 1.</p>
@@ -33,7 +45,9 @@
         <!-- Card 2 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image 2">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image 2">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 2 Description</h6>
                     <p class="text-center">Details about Image 2.</p>
@@ -43,7 +57,9 @@
         <!-- Card 3 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image 3">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image 3">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 3 Description</h6>
                     <p class="text-center">Details about Image 3.</p>
@@ -53,7 +69,9 @@
         <!-- Card 4 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image 4">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image 4">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 4 Description</h6>
                     <p class="text-center">Details about Image 4.</p>
@@ -63,7 +81,9 @@
         <!-- Card 5 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image 5">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image 5">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 5 Description</h6>
                     <p class="text-center">Details about Image 5.</p>
@@ -73,7 +93,9 @@
         <!-- Card 6 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image 6">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image 6">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 6 Description</h6>
                     <p class="text-center">Details about Image 6.</p>
@@ -83,7 +105,9 @@
         <!-- Card 7 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image7.jpg" class="card-img-top" alt="Image 7">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image7.jpg" class="card-img-top" alt="Image 7">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 7 Description</h6>
                     <p class="text-center">Details about Image 7.</p>
@@ -93,7 +117,9 @@
         <!-- Card 8 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image8.jpg" class="card-img-top" alt="Image 8">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image8.jpg" class="card-img-top" alt="Image 8">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 8 Description</h6>
                     <p class="text-center">Details about Image 8.</p>
@@ -103,7 +129,9 @@
         <!-- Card 9 -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://storage.googleapis.com/acciojob-open-file-collections/image9.jpg" class="card-img-top" alt="Image 9">
+                <div class="scrollable">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image9.jpg" class="card-img-top" alt="Image 9">
+                </div>
                 <div class="card-body">
                     <h6 class="text-center">Image 9 Description</h6>
                     <p class="text-center">Details about Image 9.</p>
